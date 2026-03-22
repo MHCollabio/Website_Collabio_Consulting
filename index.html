@@ -673,8 +673,8 @@ if(mol){let a=0;setInterval(()=>{a+=.08;mol.style.transform=`translateY(-50%) ro
 /* ── SUPABASE CONFIG ────────────────────────────────────────────────
    Replace the two placeholder values below with your project details.
    ──────────────────────────────────────────────────────────────────── */
-const SUPABASE_URL      = 'https://mjzpfwktbjdqdljgrmeb.supabase.co'; // ← replace
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1qenBmd2t0YmpkcWRsamdybWViIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY3NzIwMzIsImV4cCI6MjA3MjM0ODAzMn0.xCVNiR_UMBZFAnhNxCcJvsfFdLmCpA2wvXoQ0Tr0LGI';                // ← replace
+const SUPABASE_URL      = 'https://YOUR_PROJECT_ID.supabase.co'; // ← replace
+const SUPABASE_ANON_KEY = 'YOUR_ANON_PUBLIC_KEY';                // ← replace
 const TABLE_SUBMISSIONS = 'contact_submissions';
 const TABLE_POLICY      = 'privacy_policy_versions';
 
@@ -721,7 +721,7 @@ document.getElementById('form-submit-btn').addEventListener('click',async()=>{
     const res=await fetch(`${SUPABASE_URL}/rest/v1/${TABLE_SUBMISSIONS}`,{
       method:'POST',
       headers:{'Content-Type':'application/json','apikey':SUPABASE_ANON_KEY,'Authorization':`Bearer ${SUPABASE_ANON_KEY}`,'Prefer':'return=minimal'},
-      body:JSON.stringify({name,company:company||null,position:position||null,email,message,privacy_policy_accepted:true,privacy_policy_version:activePolicyVersion||'unknown',consent_timestamp:now,user_agent:navigator.userAgent,source:'Consulting'})
+      body:JSON.stringify({name,company:company||null,position:position||null,email,message,privacy_policy_accepted:true,privacy_policy_version:activePolicyVersion||'unknown',consent_timestamp:now,user_agent:navigator.userAgent,source:'consulting'})
     });
     if(!res.ok){const err=await res.json().catch(()=>({}));throw new Error(err.message||err.hint||`HTTP ${res.status}`);}
     successEl.style.display='block';
