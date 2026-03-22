@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CollaBio | AI-Enabled Precision Commercialisation</title>
+<title>CollaBio Consulting | AI-Enabled Precision Commercialisation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-:root{--teal:#4e9da0;--teal-light:#6dbfc2;--teal-dark:#2e7a7d;--teal-pale:rgba(78,157,160,0.12);--navy:#0d1b2a;--navy-mid:#162030;--navy-surface:#1c2a3a;--navy-card:#1f3044;--white:#f4f8fb;--white-dim:rgba(244,248,251,0.7);--white-ghost:rgba(244,248,251,0.12);--gold:#c5a55a;--gold-pale:rgba(197,165,90,0.15);--text-primary:#f4f8fb;--text-secondary:rgba(244,248,251,0.65);--text-muted:rgba(244,248,251,0.35);--border:rgba(78,157,160,0.18);--border-subtle:rgba(244,248,251,0.08)}
+:root{--teal:#4e9da0;--teal-light:#6dbfc2;--teal-dark:#2e7a7d;--teal-pale:rgba(78,157,160,0.12);--navy:#0d1b2a;--navy-mid:#162030;--navy-surface:#1c2a3a;--navy-card:#1f3044;--white:#f4f8fb;--text-primary:#f4f8fb;--text-secondary:rgba(244,248,251,0.65);--text-muted:rgba(244,248,251,0.35);--border:rgba(78,157,160,0.18);--border-subtle:rgba(244,248,251,0.08)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--navy);color:var(--text-primary);overflow-x:hidden;line-height:1.6}
@@ -48,7 +48,7 @@ h1.hero-title em{font-style:italic;color:var(--teal-light)}
 
 /* TICKER */
 .ticker{background:var(--teal-dark);padding:14px 0;overflow:hidden;border-top:1px solid rgba(78,157,160,.3);border-bottom:1px solid rgba(78,157,160,.3)}
-.ticker-inner{display:flex;animation:ticker 28s linear infinite;white-space:nowrap}
+.ticker-inner{display:flex;animation:ticker 28s linear infinite;white-space:nowrap;width:max-content}
 @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .ticker-item{display:inline-flex;align-items:center;gap:20px;padding:0 40px;font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,248,251,.7)}
 .ticker-item::after{content:'◆';font-size:6px;color:rgba(244,248,251,.3)}
@@ -69,9 +69,6 @@ section{padding:100px 5%}
 .opp-icon.red{background:rgba(220,60,60,.1)}
 .opp-item-title{font-size:14px;font-weight:600;color:var(--white);margin-bottom:4px;letter-spacing:.02em}
 .opp-item-desc{font-size:13px;color:var(--text-secondary);line-height:1.6}
-.stat-callout{background:var(--teal-pale);border-left:3px solid var(--teal);padding:24px 28px;margin-top:32px}
-.stat-callout-num{font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:300;color:var(--teal-light);line-height:1}
-.stat-callout-desc{font-size:13px;color:var(--text-secondary);margin-top:8px}
 
 /* SERVICES */
 #services{background:var(--navy)}
@@ -102,7 +99,7 @@ section{padding:100px 5%}
 .diff-item-title{font-size:15px;font-weight:600;color:var(--white);letter-spacing:.01em}
 .diff-item-desc{font-size:13px;color:var(--text-secondary);line-height:1.6;padding-left:52px}
 .value-props{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.value-prop{background:var(--navy-card);padding:28px 24px;border:1px solid var(--border-subtle);position:relative}
+.value-prop{background:var(--navy-card);padding:28px 24px;border:1px solid var(--border-subtle)}
 .value-prop-num{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--teal-light);line-height:1;margin-bottom:4px}
 .value-prop-unit{font-size:20px;color:var(--teal)}
 .value-prop-title{font-size:13px;font-weight:500;color:var(--white);letter-spacing:.04em;margin-bottom:6px}
@@ -132,9 +129,9 @@ section{padding:100px 5%}
 .team-card:hover .team-card-reveal{opacity:1}
 .team-card:hover .team-img{transform:scale(1.04)}
 .team-img-wrap{aspect-ratio:1;overflow:hidden;position:relative}
-.team-img{width:100%;height:100%;object-fit:cover;filter:grayscale(30%) brightness(.9);transition:transform .5s ease}
+.team-img{width:100%;height:100%;object-fit:cover;object-position:top;filter:grayscale(20%) brightness(.9);transition:transform .5s ease}
 .team-img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,27,42,.8) 0%,transparent 50%)}
-.team-card-reveal{position:absolute;inset:0;background:rgba(13,27,42,.9);padding:28px;opacity:0;transition:opacity .3s ease;display:flex;flex-direction:column;justify-content:flex-end}
+.team-card-reveal{position:absolute;inset:0;background:rgba(13,27,42,.92);padding:28px;opacity:0;transition:opacity .3s ease;display:flex;flex-direction:column;justify-content:flex-end}
 .team-reveal-bio{font-size:12px;color:var(--text-secondary);line-height:1.65;font-weight:300}
 .team-info{padding:24px}
 .team-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--white);margin-bottom:4px}
@@ -194,21 +191,37 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
 .fade-up:nth-child(6){transition-delay:.5s}
 
 /* RESPONSIVE */
+@media(max-width:1100px){
+  .services-grid{grid-template-columns:1fr 1fr}
+  .diff-layout{grid-template-columns:1fr 1fr;gap:48px}
+}
 @media(max-width:900px){
   .opp-grid,.diff-layout,.services-intro,.about-header,.contact-layout{grid-template-columns:1fr;gap:40px}
   .services-grid{grid-template-columns:1fr 1fr}
   .team-grid{grid-template-columns:1fr 1fr}
   .partner-models{grid-template-columns:1fr}
   .footer-top{grid-template-columns:1fr 1fr}
-  .value-props{grid-template-columns:1fr}
+  .value-props{grid-template-columns:1fr 1fr}
   .hero-stats{gap:32px}
   .nav-links{display:none}
+  .hero-molecule{width:380px;height:380px;opacity:.04;right:-40px}
+  section{padding:72px 5%}
 }
 @media(max-width:600px){
   .services-grid,.team-grid{grid-template-columns:1fr}
   .form-row{grid-template-columns:1fr}
   .footer-top{grid-template-columns:1fr}
   .hero-actions{flex-direction:column}
+  .hero-molecule{display:none}
+  .hero-stats{gap:24px}
+  .value-props{grid-template-columns:1fr}
+  section{padding:60px 5%}
+  h1.hero-title{font-size:clamp(38px,10vw,64px)}
+  .reach-number{font-size:clamp(60px,16vw,120px)}
+  .hero-stats > div{flex:1 1 40%}
+  .partner-models{grid-template-columns:1fr}
+  .reach-regions{gap:4px}
+  .reach-region{padding:10px 16px;font-size:11px}
 }
 </style>
 </head>
@@ -217,17 +230,7 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
 <!-- NAV -->
 <nav id="navbar">
   <a href="#home" class="nav-logo">
-    <svg width="38" height="38" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="50" cy="18" r="8" fill="#4e9da0"/><circle cx="82" cy="34" r="8" fill="#4e9da0"/><circle cx="82" cy="66" r="8" fill="#4e9da0"/><circle cx="50" cy="82" r="8" fill="#4e9da0"/><circle cx="18" cy="66" r="8" fill="#4e9da0"/><circle cx="18" cy="34" r="8" fill="#4e9da0"/>
-      <circle cx="50" cy="50" r="12" fill="none" stroke="#4e9da0" stroke-width="5"/>
-      <line x1="50" y1="26" x2="50" y2="38" stroke="#4e9da0" stroke-width="4" stroke-linecap="round"/>
-      <line x1="72" y1="38" x2="62" y2="44" stroke="#4e9da0" stroke-width="4" stroke-linecap="round"/>
-      <line x1="72" y1="62" x2="62" y2="56" stroke="#4e9da0" stroke-width="4" stroke-linecap="round"/>
-      <line x1="50" y1="74" x2="50" y2="62" stroke="#4e9da0" stroke-width="4" stroke-linecap="round"/>
-      <line x1="28" y1="62" x2="38" y2="56" stroke="#4e9da0" stroke-width="4" stroke-linecap="round"/>
-      <line x1="28" y1="38" x2="38" y2="44" stroke="#4e9da0" stroke-width="4" stroke-linecap="round"/>
-    </svg>
-    <span class="nav-logo-text">COLLA<span>BIO</span></span>
+    <img src="https://raw.githubusercontent.com/MHCollabio/Website_Collabio_Consulting/main/CollaBio%20Consulting%20Wordmark%20Transparent.png" alt="CollaBio Consulting" style="height:44px;width:auto;">
   </a>
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
@@ -291,20 +294,17 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
   <div class="opp-grid">
     <div class="fade-up">
       <h2 class="opp-col-title">Traditional Models Are<br>Costly, Slow &amp; Ineffective</h2>
-      <div class="opp-item"><div class="opp-icon red">⚠</div><div><div class="opp-item-title">Fragmented CRO Landscape</div><div class="opp-item-desc">Legacy CROs operate in silos. Strategy, execution, and measurement remain disconnected—driving cost overruns and missed timelines.</div></div></div>
+      <div class="opp-item"><div class="opp-icon red">🚫</div><div><div class="opp-item-title">Fragmented CRO Landscape</div><div class="opp-item-desc">Legacy CROs operate in silos. Strategy, execution, and measurement remain disconnected—driving cost overruns and missed timelines.</div></div></div>
       <div class="opp-item"><div class="opp-icon red">📉</div><div><div class="opp-item-title">Inefficient Field Force Deployment</div><div class="opp-item-desc">Reps, KAMs, and Advocacy teams are deployed without data-driven precision—resulting in poor physician engagement and wasted spend.</div></div></div>
       <div class="opp-item"><div class="opp-icon red">💸</div><div><div class="opp-item-title">Expensive, Low-Quality Insights</div><div class="opp-item-desc">Traditional market research delivers slow, expensive insights that don't integrate with commercial execution. No current player bridges the gap.</div></div></div>
       <div class="opp-item"><div class="opp-icon red">🎯</div><div><div class="opp-item-title">Launch Failure at Scale</div><div class="opp-item-desc">Up to 65% of new drug launches miss their commercial targets in Year 1. The industry needs a fundamentally different model.</div></div></div>
     </div>
     <div class="fade-up">
-      <h2 class="opp-col-title">The 2025 Market<br>Opportunity</h2>
+      <h2 class="opp-col-title">The Market<br>Opportunity</h2>
       <div class="opp-item"><div class="opp-icon">🌍</div><div><div class="opp-item-title">Global Commercialisation Spend</div><div class="opp-item-desc">Pharma commercialisation represents a multi-billion dollar global market with sustained investment in specialty and rare disease launches.</div></div></div>
       <div class="opp-item"><div class="opp-icon">🤖</div><div><div class="opp-item-title">AI Efficiency Gains</div><div class="opp-item-desc">AI-driven models are projected to cut deployment inefficiency by 20–30%, creating significant first-mover advantage for early adopters.</div></div></div>
       <div class="opp-item"><div class="opp-icon">🧬</div><div><div class="opp-item-title">Specialty Therapy Premium</div><div class="opp-item-desc">Autoimmune, Rare Disease, and Biologics represent the highest-value ROI segments—precisely where CollaBio specialises.</div></div></div>
-      <div class="stat-callout">
-        <div class="stat-callout-num">65<span style="font-size:28px;color:var(--teal)">%</span></div>
-        <div class="stat-callout-desc">of new drug launches miss their commercial targets in Year 1. CollaBio exists to close that gap permanently.</div>
-      </div>
+      <div class="opp-item"><div class="opp-icon">📊</div><div><div class="opp-item-title">Persistent Launch Failure</div><div class="opp-item-desc">Up to 65% of new drug launches miss their commercial targets in Year 1. CollaBio exists to close that gap permanently with precision-led commercialisation.</div></div></div>
     </div>
   </div>
 </section>
@@ -377,15 +377,13 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
     </div>
     <p class="about-desc">Our founding team brings together <strong>extraordinary depth</strong> across pharmaceutical commercialisation, corporate law, financial strategy, talent leadership, and operations—with a combined track record spanning <strong>GSK, Teva, Sobi, Merck Serono, Roche, Shire</strong> and dozens of high-growth biotechs.<br><br>Together, we have led launches, built platforms, negotiated billion-dollar transactions, and scaled organisations from concept to exit across <strong>every major global market</strong>.</p>
   </div>
-
   <div class="founding-label">Founding Partners &amp; Advisory Leadership</div>
-
   <div class="team-grid">
 
-    <!-- 1. Neil Dugdale — same size as everyone else -->
+    <!-- 1. Neil Dugdale -->
     <div class="team-card fade-up">
       <div class="team-img-wrap">
-        <img class="team-img" src="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2F7a62abec53ae354ece62bdaba19dda1e.jpg&q=75" alt="Neil Dugdale" loading="lazy">
+        <img class="team-img" src="https://raw.githubusercontent.com/MHCollabio/Website_Collabio_Consulting/main/Headshot%20-%20Neil%20Dugdale.jpg" alt="Neil Dugdale" loading="lazy">
         <div class="team-img-overlay"></div>
         <div class="team-card-reveal">
           <p class="team-reveal-bio">Commercial leader with 25+ years driving pharmaceutical growth across European markets. Former CEO of Flynn Pharma and Interim Commercial Director at Rosemont Pharmaceuticals. Previously VP &amp; GM Northern Europe and UK &amp; Ireland GM at Sobi, UK Country Lead at GenSight Biologics, and Director of Oncology at Merck Serono.</p>
@@ -401,7 +399,7 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
     <!-- 2. Ian Crouch -->
     <div class="team-card fade-up">
       <div class="team-img-wrap">
-        <img class="team-img" src="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2F7dbec61b161a1809fb3e8ae0d0d28b48.jpg&q=75" alt="Ian Crouch" loading="lazy">
+        <img class="team-img" src="https://raw.githubusercontent.com/MHCollabio/Website_Collabio_Consulting/main/Headshot%20-%20Ian%20Crouch.jpg" alt="Ian Crouch" loading="lazy">
         <div class="team-img-overlay"></div>
         <div class="team-card-reveal">
           <p class="team-reveal-bio">Strategic team builder with 18+ years guiding early-stage biotechs from concept to exit. Played pivotal roles in 10+ transitions including Synageva, Kite, GW Pharmaceuticals, Shire, and Intercept. Deep cross-border experience across US, European, and emerging markets.</p>
@@ -417,7 +415,7 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
     <!-- 3. Sean Roberts -->
     <div class="team-card fade-up">
       <div class="team-img-wrap">
-        <img class="team-img" src="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2Fcfa017be4ae674d61bfb6a5f5798d9c9.jpg&q=75" alt="Sean Roberts" loading="lazy">
+        <img class="team-img" src="https://raw.githubusercontent.com/MHCollabio/Website_Collabio_Consulting/main/Headshot%20-%20Sean%20Roberts.jpg" alt="Sean Roberts" loading="lazy">
         <div class="team-img-overlay"></div>
         <div class="team-card-reveal">
           <p class="team-reveal-bio">General Counsel with 30+ years at board level in FTSE 50 companies. Led the GlaxoWellcome/SmithKline Beecham merger and created global JVs between GSK and Novartis and Pfizer. Previously SVP General Counsel at GSK Consumer Healthcare.</p>
@@ -433,7 +431,7 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
     <!-- 4. Simon Egan -->
     <div class="team-card fade-up">
       <div class="team-img-wrap">
-        <img class="team-img" src="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2Fda5139eff80ae49d3707ba9d2c2f318d.jpg&q=75" alt="Simon Egan" loading="lazy">
+        <img class="team-img" src="https://raw.githubusercontent.com/MHCollabio/Website_Collabio_Consulting/main/Headshot%20-%20Simon%20Egan.jpg" alt="Simon Egan" loading="lazy">
         <div class="team-img-overlay"></div>
         <div class="team-card-reveal">
           <p class="team-reveal-bio">Strategic management and business development entrepreneur with 40+ years. Founder &amp; CFO of Alverium Health. Previously Finance Director and Founding Partner at FleetEurope PLC. Expertise in M&amp;A, financial management, and building sustainable organisations.</p>
@@ -449,7 +447,7 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
     <!-- 5. Jamie Hawkes -->
     <div class="team-card fade-up">
       <div class="team-img-wrap">
-        <img class="team-img" src="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2Fa13b90c83882ff499d28137f244970b2.jpg&q=75" alt="Jamie Hawkes" loading="lazy">
+        <img class="team-img" src="https://raw.githubusercontent.com/MHCollabio/Website_Collabio_Consulting/main/Headshot%20-%20Jamie%20Hawkes.jpg" alt="Jamie Hawkes" loading="lazy">
         <div class="team-img-overlay"></div>
         <div class="team-card-reveal">
           <p class="team-reveal-bio">Technical executive with 20+ years in specialty chemicals and pharmaceutical product development. Previously Global Head of Hair Care Technology at Lonza. Recognised innovator with 34 granted patents and 31 pending applications. Expert in R&amp;D leadership and IP strategy.</p>
@@ -465,7 +463,7 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
     <!-- 6. Mike Hoang -->
     <div class="team-card fade-up">
       <div class="team-img-wrap">
-        <img class="team-img" src="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2Fe81a5c177ac7fab08a112e3101757094.png&q=75" alt="Mike Hoang" loading="lazy">
+        <img class="team-img" src="https://raw.githubusercontent.com/MHCollabio/Website_Collabio_Consulting/main/Headshot%20-%20Mike%20Hoang.jpg" alt="Mike Hoang" loading="lazy">
         <div class="team-img-overlay"></div>
         <div class="team-card-reveal">
           <p class="team-reveal-bio">Healthcare technology executive with 15+ years commercialising precision medicine platforms. Led product management at Roche, Life Technologies, and Beckman Coulter having launched 10+ successful products. Founded Scriptyx connecting patient outcomes data with pharma insights.</p>
@@ -481,7 +479,7 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
     <!-- 7. Nick Plumeridge -->
     <div class="team-card fade-up">
       <div class="team-img-wrap">
-        <img class="team-img" src="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2Ff936277977e2a015ed265982e389cdd7.jpg&q=75" alt="Nick Plumeridge" loading="lazy">
+        <img class="team-img" src="https://raw.githubusercontent.com/MHCollabio/Website_Collabio_Consulting/main/Headshot%20-%20Nick%20Plumeridge.jpg" alt="Nick Plumeridge" loading="lazy">
         <div class="team-img-overlay"></div>
         <div class="team-card-reveal">
           <p class="team-reveal-bio">Life science executive with 30+ years in global pharma BD and M&amp;A. Former Royal Navy officer. Led major transactions at Aventis, Serono, Takeda, Quintiles, and Epirus including Nycomed and Valeant acquisitions. Focused on early-stage strategies and alliances for biotech startups.</p>
@@ -494,10 +492,10 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
       </div>
     </div>
 
-    <!-- 8. Lina Cogan — moved to end -->
+    <!-- 8. Lina Cogan -->
     <div class="team-card fade-up">
       <div class="team-img-wrap">
-        <img class="team-img" src="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2Fb5bd84c9af3c65e9277cdcb4e403ef6c.jpg&q=75" alt="Lina Cogan" loading="lazy">
+        <img class="team-img" src="https://raw.githubusercontent.com/MHCollabio/Website_Collabio_Consulting/main/Headshot%20-%20Lina%20Cogan.jpg" alt="Lina Cogan" loading="lazy">
         <div class="team-img-overlay"></div>
         <div class="team-card-reveal">
           <p class="team-reveal-bio">Pharmaceutical executive with 20+ years in business development and strategic sourcing. Co-founder at CollaBio leading EU acquisition initiatives. Previously Director at Teva Pharmaceuticals managing $900M+ globally. Deep expertise in transformation, M&amp;A, and supply chain operations.</p>
@@ -510,10 +508,10 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
       </div>
     </div>
 
-    <!-- 9. Gal Kaspi — moved to end -->
+    <!-- 9. Gal Kaspi -->
     <div class="team-card fade-up">
       <div class="team-img-wrap">
-        <img class="team-img" src="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2F236c964ef169809fe85312ac43b708a2.jpg&q=75" alt="Gal Kaspi" loading="lazy">
+        <img class="team-img" src="https://raw.githubusercontent.com/MHCollabio/Website_Collabio_Consulting/main/Headshot%20-%20Gal%20Kaspi.jpg" alt="Gal Kaspi" loading="lazy">
         <div class="team-img-overlay"></div>
         <div class="team-card-reveal">
           <p class="team-reveal-bio">Operations and supply chain executive with 17+ years in pharmaceutical manufacturing. General Manager at Medibrane. Previously Head of End-to-End Product Strategy at Teva Pharmaceuticals. Expert in process improvement, supply chain optimisation, and operational excellence.</p>
@@ -557,45 +555,63 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
     </div>
     <div class="contact-form">
       <div class="form-title">Schedule a Consultation</div>
-      <div class="form-row">
-        <div class="form-group"><label class="form-label">First Name</label><input type="text" class="form-input" placeholder="First name"></div>
-        <div class="form-group"><label class="form-label">Last Name</label><input type="text" class="form-input" placeholder="Last name"></div>
+      <div class="form-group">
+        <label class="form-label">Full Name</label>
+        <input type="text" id="f-name" class="form-input" placeholder="Your full name">
       </div>
-      <div class="form-group"><label class="form-label">Organisation</label><input type="text" class="form-input" placeholder="Company / Institution"></div>
-      <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="your@company.com"></div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Company / Organisation</label>
+          <input type="text" id="f-company" class="form-input" placeholder="Company / Institution">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Job Title</label>
+          <input type="text" id="f-position" class="form-input" placeholder="Your role">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email</label>
+        <input type="email" id="f-email" class="form-input" placeholder="your@company.com">
+      </div>
       <div class="form-group">
         <label class="form-label">Area of Interest</label>
-        <select class="form-select"><option value="">Select a service area...</option><option>Strategic Commercialisation</option><option>AI-Powered Commercial Insights</option><option>Expert Talent Delivery</option><option>Global Partnership Network</option><option>Launch-in-a-Box</option><option>Partnership / Co-development</option><option>General Enquiry</option></select>
+        <select id="f-interest" class="form-select">
+          <option value="">Select a service area...</option>
+          <option>Strategic Commercialisation</option>
+          <option>AI-Powered Commercial Insights</option>
+          <option>Expert Talent Delivery</option>
+          <option>Global Partnership Network</option>
+          <option>Launch-in-a-Box</option>
+          <option>Partnership / Co-development</option>
+          <option>General Enquiry</option>
+        </select>
       </div>
-      <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="Tell us about your programme and commercial objectives..."></textarea></div>
-      <!-- GDPR Consent -->
+      <div class="form-group">
+        <label class="form-label">Message</label>
+        <textarea id="f-message" class="form-textarea" placeholder="Tell us about your programme and commercial objectives..."></textarea>
+      </div>
       <div class="form-group" style="margin-top:8px">
         <label style="display:flex;gap:12px;align-items:flex-start;cursor:pointer">
-          <input type="checkbox" id="gdpr-consent" style="margin-top:3px;accent-color:var(--teal);width:16px;height:16px;flex-shrink:0">
+          <input type="checkbox" id="f-consent" style="margin-top:3px;accent-color:var(--teal);width:16px;height:16px;flex-shrink:0">
           <span style="font-size:12px;color:var(--text-secondary);line-height:1.6;font-weight:300">
             I consent to CollaBio storing and processing my personal data to respond to this enquiry, in accordance with our
-            <a href="#" style="color:var(--teal);text-decoration:underline">Privacy Policy</a>.
+            <a href="#" id="privacy-policy-link" style="color:var(--teal);text-decoration:underline">Privacy Policy</a>
+            <span id="privacy-version-badge" style="font-size:10px;color:var(--text-muted);margin-left:4px"></span>.
             You may withdraw consent at any time by contacting us directly.
           </span>
         </label>
       </div>
-      <p style="font-size:11px;color:var(--text-muted);margin-top:8px;margin-bottom:20px;line-height:1.6;font-weight:300">
-        Your data is processed under GDPR Article 6(1)(a) — consent. We will never sell or share your data with third parties for marketing purposes. Data is retained for 24 months or until you request deletion.
-      </p>
-
+      <p style="font-size:11px;color:var(--text-muted);margin-top:8px;margin-bottom:20px;line-height:1.6;font-weight:300">Your data is processed under GDPR Article 6(1)(a) — consent. We will never sell or share your data with third parties for marketing purposes. Data is retained for 24 months or until you request deletion.</p>
       <button id="form-submit-btn" class="btn-primary" style="width:100%;justify-content:center" type="button">
-        Send Message
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Send Message <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
-
-      <!-- Status messages -->
       <div id="form-success" style="display:none;margin-top:20px;padding:16px 20px;background:rgba(78,157,160,0.12);border-left:3px solid var(--teal)">
         <p style="font-size:13px;color:var(--teal-light);font-weight:500">Message sent successfully.</p>
         <p style="font-size:12px;color:var(--text-secondary);margin-top:4px">A member of our team will be in touch shortly.</p>
       </div>
       <div id="form-error" style="display:none;margin-top:20px;padding:16px 20px;background:rgba(220,60,60,0.08);border-left:3px solid rgba(220,60,60,0.6)">
         <p style="font-size:13px;color:#e07070;font-weight:500">Something went wrong.</p>
-        <p style="font-size:12px;color:var(--text-secondary);margin-top:4px" id="form-error-msg">Please try again or email us directly.</p>
+        <p id="form-error-msg" style="font-size:12px;color:var(--text-secondary);margin-top:4px">Please try again or email us directly.</p>
       </div>
     </div>
   </div>
@@ -606,17 +622,7 @@ footer{background:#080f18;padding:60px 5% 40px;border-top:1px solid var(--border
   <div class="footer-top">
     <div class="footer-brand">
       <a href="#home" class="nav-logo">
-        <svg width="38" height="38" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="18" r="8" fill="#4e9da0"/><circle cx="82" cy="34" r="8" fill="#4e9da0"/><circle cx="82" cy="66" r="8" fill="#4e9da0"/><circle cx="50" cy="82" r="8" fill="#4e9da0"/><circle cx="18" cy="66" r="8" fill="#4e9da0"/><circle cx="18" cy="34" r="8" fill="#4e9da0"/>
-          <circle cx="50" cy="50" r="12" fill="none" stroke="#4e9da0" stroke-width="5"/>
-          <line x1="50" y1="26" x2="50" y2="38" stroke="#4e9da0" stroke-width="4" stroke-linecap="round"/>
-          <line x1="72" y1="38" x2="62" y2="44" stroke="#4e9da0" stroke-width="4" stroke-linecap="round"/>
-          <line x1="72" y1="62" x2="62" y2="56" stroke="#4e9da0" stroke-width="4" stroke-linecap="round"/>
-          <line x1="50" y1="74" x2="50" y2="62" stroke="#4e9da0" stroke-width="4" stroke-linecap="round"/>
-          <line x1="28" y1="62" x2="38" y2="56" stroke="#4e9da0" stroke-width="4" stroke-linecap="round"/>
-          <line x1="28" y1="38" x2="38" y2="44" stroke="#4e9da0" stroke-width="4" stroke-linecap="round"/>
-        </svg>
-        <span class="nav-logo-text">COLLA<span>BIO</span></span>
+        <img src="https://raw.githubusercontent.com/MHCollabio/Website_Collabio_Consulting/main/CollaBio%20Consulting%20Wordmark%20Transparent.png" alt="CollaBio Consulting" style="height:44px;width:auto;">
       </a>
       <p>AI-Enabled Precision Commercialisation for Autoimmune, Rare Disease, and Specialty markets. Truly global with access to 500+ consultants worldwide.</p>
     </div>
@@ -664,98 +670,70 @@ window.addEventListener('scroll',()=>{let cur='';secs.forEach(s=>{if(window.scro
 const mol=document.querySelector('.hero-molecule');
 if(mol){let a=0;setInterval(()=>{a+=.08;mol.style.transform=`translateY(-50%) rotate(${a}deg)`;},16);}
 
-/* ── SUPABASE FORM HANDLER ──────────────────────────────────────────
-   Replace the three placeholder values below with your project details.
-   The anon key is safe to use client-side — it is designed to be public.
-   Ensure Row Level Security (RLS) is enabled on your Supabase table
-   with an INSERT-only policy for the anon role.
+/* ── SUPABASE CONFIG ────────────────────────────────────────────────
+   Replace the two placeholder values below with your project details.
    ──────────────────────────────────────────────────────────────────── */
-const SUPABASE_URL    = 'https://YOUR_PROJECT_ID.supabase.co';  // ← replace
-const SUPABASE_ANON_KEY = 'YOUR_ANON_PUBLIC_KEY';               // ← replace
-const SUPABASE_TABLE  = 'YOUR_TABLE_NAME';                      // ← replace
+const SUPABASE_URL      = 'https://YOUR_PROJECT_ID.supabase.co'; // ← replace
+const SUPABASE_ANON_KEY = 'YOUR_ANON_PUBLIC_KEY';                // ← replace
+const TABLE_SUBMISSIONS = 'contact_submissions';
+const TABLE_POLICY      = 'privacy_policy_versions';
 
-document.getElementById('form-submit-btn').addEventListener('click', async () => {
-  const btn       = document.getElementById('form-submit-btn');
-  const successEl = document.getElementById('form-success');
-  const errorEl   = document.getElementById('form-error');
-  const errorMsg  = document.getElementById('form-error-msg');
-
-  // Reset state
-  successEl.style.display = 'none';
-  errorEl.style.display   = 'none';
-
-  // Collect values
-  const firstName  = document.querySelector('input[placeholder="First name"]').value.trim();
-  const lastName   = document.querySelector('input[placeholder="Last name"]').value.trim();
-  const org        = document.querySelector('input[placeholder="Company / Institution"]').value.trim();
-  const email      = document.querySelector('input[placeholder="your@company.com"]').value.trim();
-  const interest   = document.querySelector('.form-select').value;
-  const message    = document.querySelector('.form-textarea').value.trim();
-  const gdprConsent = document.getElementById('gdpr-consent').checked;
-
-  // Validation
-  if (!firstName || !lastName || !email) {
-    errorEl.style.display = 'block';
-    errorMsg.textContent  = 'Please fill in your first name, last name, and email.';
-    return;
-  }
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    errorEl.style.display = 'block';
-    errorMsg.textContent  = 'Please enter a valid email address.';
-    return;
-  }
-  if (!gdprConsent) {
-    errorEl.style.display = 'block';
-    errorMsg.textContent  = 'Please confirm your consent before submitting.';
-    return;
-  }
-
-  // Loading state
-  btn.textContent = 'Sending…';
-  btn.disabled    = true;
-
-  try {
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/${SUPABASE_TABLE}`, {
-      method: 'POST',
-      headers: {
-        'Content-Type':  'application/json',
-        'apikey':        SUPABASE_ANON_KEY,
-        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-        'Prefer':        'return=minimal'
-      },
-      body: JSON.stringify({
-        first_name:    firstName,
-        last_name:     lastName,
-        organisation:  org,
-        email:         email,
-        interest:      interest,
-        message:       message,
-        gdpr_consent:  gdprConsent,
-        consent_ts:    new Date().toISOString(), // timestamp consent was given
-        submitted_at:  new Date().toISOString()
-      })
-    });
-
-    if (!res.ok) {
-      const err = await res.json().catch(() => ({}));
-      throw new Error(err.message || `HTTP ${res.status}`);
+let activePolicyVersion = null;
+async function loadPrivacyPolicyVersion(){
+  try{
+    const res=await fetch(`${SUPABASE_URL}/rest/v1/${TABLE_POLICY}?is_active=eq.true&select=version&limit=1`,
+      {headers:{'apikey':SUPABASE_ANON_KEY,'Authorization':`Bearer ${SUPABASE_ANON_KEY}`}});
+    const data=await res.json();
+    if(data&&data.length>0){
+      activePolicyVersion=data[0].version;
+      const badge=document.getElementById('privacy-version-badge');
+      if(badge)badge.textContent=`(v${activePolicyVersion})`;
     }
+  }catch(e){console.warn('Could not load privacy policy version:',e);}
+}
+loadPrivacyPolicyVersion();
 
-    // Success — clear form
-    successEl.style.display = 'block';
-    ['input[placeholder="First name"]','input[placeholder="Last name"]',
-     'input[placeholder="Company / Institution"]','input[placeholder="your@company.com"]']
-      .forEach(s => document.querySelector(s).value = '');
-    document.querySelector('.form-select').value    = '';
-    document.querySelector('.form-textarea').value  = '';
-    document.getElementById('gdpr-consent').checked = false;
+document.getElementById('form-submit-btn').addEventListener('click',async()=>{
+  const btn=document.getElementById('form-submit-btn');
+  const successEl=document.getElementById('form-success');
+  const errorEl=document.getElementById('form-error');
+  const errorMsg=document.getElementById('form-error-msg');
+  successEl.style.display='none';errorEl.style.display='none';
 
-  } catch(err) {
-    errorEl.style.display = 'block';
-    errorMsg.textContent  = `Submission failed: ${err.message}. Please try again or email us directly.`;
-  } finally {
-    btn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-    btn.disabled  = false;
+  const name=document.getElementById('f-name').value.trim();
+  const company=document.getElementById('f-company').value.trim();
+  const position=document.getElementById('f-position').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const interest=document.getElementById('f-interest').value;
+  const msgRaw=document.getElementById('f-message').value.trim();
+  const consent=document.getElementById('f-consent').checked;
+  const message=interest?`Area of Interest: ${interest}\n\n${msgRaw}`:msgRaw;
+
+  if(!name){errorEl.style.display='block';errorMsg.textContent='Please enter your full name.';return;}
+  if(!email||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){errorEl.style.display='block';errorMsg.textContent='Please enter a valid email address.';return;}
+  if(!message.replace(/Area of Interest:.*\n\n/,'').trim()){errorEl.style.display='block';errorMsg.textContent='Please include a message before submitting.';return;}
+  if(!consent){errorEl.style.display='block';errorMsg.textContent='Please confirm your consent to our Privacy Policy before submitting.';return;}
+
+  btn.innerHTML='Sending…';btn.disabled=true;
+
+  try{
+    const now=new Date().toISOString();
+    const res=await fetch(`${SUPABASE_URL}/rest/v1/${TABLE_SUBMISSIONS}`,{
+      method:'POST',
+      headers:{'Content-Type':'application/json','apikey':SUPABASE_ANON_KEY,'Authorization':`Bearer ${SUPABASE_ANON_KEY}`,'Prefer':'return=minimal'},
+      body:JSON.stringify({name,company:company||null,position:position||null,email,message,privacy_policy_accepted:true,privacy_policy_version:activePolicyVersion||'unknown',consent_timestamp:now,user_agent:navigator.userAgent,source:'pilot-website'})
+    });
+    if(!res.ok){const err=await res.json().catch(()=>({}));throw new Error(err.message||err.hint||`HTTP ${res.status}`);}
+    successEl.style.display='block';
+    ['f-name','f-company','f-position','f-email','f-message'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='';});
+    document.getElementById('f-interest').value='';
+    document.getElementById('f-consent').checked=false;
+  }catch(err){
+    errorEl.style.display='block';
+    errorMsg.textContent=`Submission failed: ${err.message}. Please try again or email us directly.`;
+  }finally{
+    btn.innerHTML='Send Message <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    btn.disabled=false;
   }
 });
 </script>
